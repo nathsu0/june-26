@@ -1,0 +1,93 @@
+#canvas1{
+    /* border: 5px solid black; */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1600px;
+    height: 900px;
+        overflow: hidden;
+}
+
+body{
+    font-family:Verdana, sans-serif;
+    margin-left:75%;
+    margin-top: 5%;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+p{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Segoe UI';
+    font-size: 80px;
+     margin: 50;
+    /* height: 80px;
+    width: 200px;  */
+}
+
+textarea {
+  width: 65%;
+  height: 30%;
+  font-family:'Segoe UI';
+  font-weight: bold;
+  font-size: 55px;
+  color: rgb(0, 0, 0);
+  text-indent: 5%;
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  border: none;
+  resize: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 120%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+ 
+  /* Modal Content */
+  .modal-content {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    background-image: url(asset.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .modal-content1 {
+    background-color: #fefefe;
+    margin: auto;
+    /* padding: 20px; */
+    border: 1px solid #888;
+    margin-top: 5%;
+    width: 60%;
+    height: 60%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
