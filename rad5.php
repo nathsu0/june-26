@@ -1,7 +1,5 @@
 <?php
-    session_start();
-    $code = $_SESSION['decode'];
-    $conn = mysqli_connect('localhost','root','',$code);
+    include 'code.php';
     $rad =  $_POST['input'];
     $num = $_SESSION['payb']; 
     $user = $_SESSION['user'];
@@ -17,7 +15,7 @@
 
     if($rad == $ans){
        $N5 = 1;
-       echo $N5;
+       echo "Your answer is correct!";
 
     }
     else{

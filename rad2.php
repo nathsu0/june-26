@@ -1,7 +1,5 @@
 <?php
-    session_start();
-    $code = $_SESSION['decode'];
-    $conn = mysqli_connect('localhost','root','',$code);
+    include 'code.php';
     $rad =  $_POST['input'];
     $num = $_SESSION['tu']; 
     
@@ -11,7 +9,7 @@
 
     if($rad == $ans){
        $_SESSION['N2'] = 1;
-       echo $_SESSION['N2'];
+       echo "Your answer is correct!";
 
     }
     else{

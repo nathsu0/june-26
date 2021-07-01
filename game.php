@@ -1,9 +1,7 @@
 
 <?php
-      session_start();
-      include "db.php";
-      $code = $_SESSION['decode'];
-      $conn = mysqli_connect('localhost','root','',$code);
+      include 'code.php';
+      include 'db.php';
       $score =0;
       
       $rand = array("1","2","3","4","5");

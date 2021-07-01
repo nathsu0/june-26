@@ -1,7 +1,6 @@
 <?php
       session_start();
-      $db = new mysqli('localhost', 'root', '');
-      $conn = mysqli_connect('localhost','root','','question');
+      include "db.php";
 
       if(isset($_POST['done'])){
       $mamama = $_POST['dcode'];
